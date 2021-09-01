@@ -163,3 +163,11 @@ let object2 = { age: 25 }
 
 let newObject1 = { ...object1, ...object2 }
 console.log(newObject1)
+
+let student1 = {name:"Ayman"}
+let student2 = {name:"Mary"}
+let newObject = {
+    student1, student2
+}
+
+console.log(newObject)
