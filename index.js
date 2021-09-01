@@ -131,6 +131,7 @@ console.log(f1_ES6())
 
 
 
+
 // destructuring 
 let { address } = {address:{city:"New York", country:"USA"}};
 
@@ -138,3 +139,21 @@ let {city, country} = address;
 
 console.log(city) // New York
 console.log(country) // USA
+
+
+//-------- spread Operator
+let array1 = [1,2,3];
+let array2 = [4,5,6];
+// Using ES5
+array1 = array1.concat(array2);
+console.log(array1)//  [1,2,3,4,5,6]
+// Using ES6
+array1 = [1,2,3];
+array2 = [4,5,6];
+array1 = [...array1, ...array2];
+console.log(array1)//  [1,2,3,4,5,6]
+
+let f = products.map(product => (
+    { name:product.name, 
+    price: product.price + 2 }));
+console.log(f);
