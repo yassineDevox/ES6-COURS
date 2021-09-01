@@ -45,3 +45,14 @@ const multiply= () => console.log(2 * 3) ;
 
 //appel
 multiply()
+
+let sayHello = () => alert`Hello`;
+let sayBye = () => alert`Bye`;
+//sayHello(); // “Hello” will be alerted
+// Let’s create a function that takes an argument and call it as if it was a function
+let doSomething = param => {
+    param();
+};
+//  Now any function we send to “doSomething()” function will be called right away
+doSomething(sayHello); // “Hello” will be alerted
+doSomething(sayBye); // “Bye” will be alerted
