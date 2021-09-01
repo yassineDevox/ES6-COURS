@@ -129,3 +129,12 @@ showEachOne();
 // console.log(f1())
 console.log(f1_ES6())
 
+
+
+// destructuring 
+let { address } = {address:{city:"New York", country:"USA"}};
+
+let {city, country} = address;
+
+console.log(city) // New York
+console.log(country) // USA
