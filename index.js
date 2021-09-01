@@ -157,3 +157,9 @@ let f = products.map(product => (
     { name:product.name, 
     price: product.price + 2 }));
 console.log(f);
+
+let object1 = { firstName: 'John', lastName: 'Brown' }
+let object2 = { age: 25 }
+
+let newObject1 = { ...object1, ...object2 }
+console.log(newObject1)
