@@ -18,10 +18,18 @@
 // console.log(i) Error
 
 //----------- string literal
-let name = "John"
-// using normal quotes
-console.log("Hello "+name+", how are you ?");
-// using ES6 template literals
-console.log(`
-Hello ${name}, how are you ?
-`);
+// let name = "John"
+// // using normal quotes
+// console.log("Hello "+name+", how are you ?");
+// // using ES6 template literals
+// console.log(`
+// Hello ${name}, how are you ?
+// `);
+
+//------- teneray operator
+//program to check pass or fail 
+let marks = prompt ('Enter your marks:'); 
+
+ // check the condition
+let result = ( marks >=40 ) ? 'pass' : 'fail';
+console.log (`You ${result} the exam.`);
