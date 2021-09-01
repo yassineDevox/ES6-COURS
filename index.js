@@ -27,9 +27,21 @@
 // `);
 
 //------- teneray operator
-//program to check pass or fail 
-let marks = prompt ('Enter your marks:'); 
+// //program to check pass or fail 
+// let marks = prompt ('Enter your marks:'); 
 
- // check the condition
-let result = ( marks >=40 ) ? 'pass' : 'fail';
-console.log (`You ${result} the exam.`);
+//  // check the condition
+// let result = ( marks >=40 ) ? 'pass' : 'fail';
+// console.log (`You ${result} the exam.`);
+
+
+//--------- arrow funtions
+
+
+// JavaScript (ES5)
+// function multiply() { return 2 * 3; };
+// ES6
+const multiply= () => console.log(2 * 3) ;
+
+//appel
+multiply()
